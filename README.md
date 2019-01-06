@@ -7,8 +7,8 @@ Modifications needed
 
 - `account_sid` needs to be updated with your account_sid from twilio.
 - `auth_token` needs to be updated with your auth_token from twilio.
-- add url to product page on barneys.com to `page = requests.get(product url here)`.
-- inspect element for size of product you want to monitor and look for `data_skuid`. Copy and paste that skuid into ` element = soup.find("a", {"data-skuid": "skuid here"})`.
+- add url of the product page on barneys.com to `product_url` variable.
+- inspect element for size of product you want to monitor and look for `data_skuid`. Copy and paste that skuid as the value for the `product_sku` variable.
 - `from_` needs to be updated with your twilio phone number.
 - `to` needs to be updated with your personal phone number or whatever phone number you want to recieve the texts.
 
