@@ -16,11 +16,12 @@ page = requests.get("https://www.barneys.com/product/canada-goose-macculloch-dow
 
 soup = BeautifulSoup(page, "lxml")
 element = soup.find("a", {"data-skuid":"00505057258287"})
+quantity = element.get("data-onhand-quantity")
 
 if element.get("data-availabilitystatus") == "1000":
     message = client.messages \
                 .create(
-                     body="The product is currently in stock!",
+                     body="The product is currently in stock! There is/are " + quantity + " in stock.",
                      from_='+twilio phone number you buy',
                      to='+your phone number'
                  )
