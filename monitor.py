@@ -35,6 +35,8 @@ while True:
             from_=os.getenv("from_"),
             to=os.getenv("to"),
         )
+        exit()
     else:
-        pass
-    time.sleep(600)
+        time.sleep(600)
+        print("Checking if product is in stock...")
+    
