@@ -17,12 +17,15 @@ Modifications needed
 Possible issue
 --------------
 
-There could be an issue with _one size_ products as source code for _one size_ products are different and code doesn't account for that.
+There could be an issue with _one size_ products as source code for _one size_ products are different and my current code doesn't account for that.
 
 Installation
 ------------
+- Make sure you have Python 3 on your machine. (If not follow this guide https://docs.python-guide.org/starting/install3/osx/)
+- Clone repo.
+- Install BeautifulSoup by running `pip install beautifulsoup4`.
+- Install requests by running `pip install requests`.
+- Install Twilio by running `pip install twilio`.
+- Install lxml by running `pip install lxml`.
+- Make sure you are in the directory and run `python3 monitor.py` in a terminal window you have opened.
 
-- Install BeautifulSoup by running `pip install beautifulsoup4`
-- Install requests by running `pip install requests`
-- Install Twilio by running `pip install twilio`
-- Install lxml by running `pip install lxml`
