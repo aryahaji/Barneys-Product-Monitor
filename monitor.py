@@ -16,9 +16,9 @@ account_sid = os.getenv("account_sid")
 auth_token = os.getenv("auth_token")
 client = Client(account_sid, auth_token)
 
-    headers = {
-        "User-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
-    }
+headers = {
+    "User-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"
+}
 
 while True:
     page = requests.get(product_url,headers=headers,).text
