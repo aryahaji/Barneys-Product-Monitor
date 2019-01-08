@@ -21,7 +21,7 @@ headers = {
 }
 
 while True:
-    page = requests.get(product_url, headers=headers,).text
+    page = requests.get(product_url, headers=headers).text
 
     soup = BeautifulSoup(page, "lxml")
     element = soup.find("a", {"data-skuid": product_sku})
